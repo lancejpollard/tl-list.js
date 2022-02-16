@@ -19,7 +19,7 @@ function getPath(size, i) {
     return [i]
   }
 
-  for (let sub = 1; sub < 7; sub++) {
+  for (let sub = limit; code; sub++) {
     i -= limit
     code = Math.floor(code /  POSSIBLE_SHAPE_LIST.length)
     limit = POSSIBLE_SHAPE_LIST[code % POSSIBLE_SHAPE_LIST.length]
